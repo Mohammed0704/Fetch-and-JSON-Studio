@@ -22,9 +22,8 @@ window.addEventListener("load", function() {
             </div>
             <img class="avatar" src=${data[i].picture}>
         </div>
-
-        console.log("Number of Astronauts: data.length")
         `
+        container.innerHTML = console.log("Number of Astronauts:", data.length)
         }
 
     }
