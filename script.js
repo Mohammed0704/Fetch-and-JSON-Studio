@@ -12,8 +12,8 @@ window.addEventListener("load", function() {
         for (let i=0; i<data.length; i++){
             container.innerHTML += `
             <div class="astronaut">
-            <div>
-                <h3>${data[i].firstName + " " + data[i].lastName}</h3>
+            <div class="bio">
+                <h3>${data[i].firstName} ${data[i].lastName}</h3>
                 <ul>
                     <li>Hours in space: ${data[i].hoursInSpace}</li>
                     <li>Active: ${data[i].active}</li>
@@ -22,11 +22,12 @@ window.addEventListener("load", function() {
             </div>
             <img class="avatar" src=${data[i].picture}>
         </div>
+
+        console.log("Number of Astronauts: data.length")
         `
         }
 
     }
-
     getAstronauts();
 
 });
