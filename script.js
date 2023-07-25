@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
         for (let i=0; i<data.length; i++){
             container.innerHTML += `
             <div class="astronaut">
-            <div class="bio">
+            <div>
                 <h3>${data[i].firstName + " " + data[i].lastName}</h3>
                 <ul>
                     <li>Hours in space: ${data[i].hoursInSpace}</li>
