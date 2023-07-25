@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
             container.innerHTML += `
             <div class="astronaut">
             <div class="bio">
-                <h3>${data[i].firstName + data[i].lastName}</h3>
+                <h3>${data[i].firstName + " " + data[i].lastName}</h3>
                 <ul>
                     <li>Hours in space: ${data[i].hoursInSpace}</li>
                     <li>Active: ${data[i].active}</li>
